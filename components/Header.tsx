@@ -41,10 +41,13 @@ function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
           className="cursor-pointer"
+          url="mailto:anunayajoshi@gmail.com"
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get In Touch
-        </p>
+        <a href="mailto:anunayajoshi@gmail.com">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            Get In Touch
+          </p>
+        </a>
       </motion.div>
     </header>
   );
