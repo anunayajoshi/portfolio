@@ -31,6 +31,7 @@ const ContactMe = (props: Props) => {
 
       <div className="flex flex-col space-y-8 mt-24">
         <h4 className="text-4xl font-semibold text-center">
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
           Don't contact me after work hours. <br />
           <span className="text-2xl">
             {" "}
@@ -47,7 +48,7 @@ const ContactMe = (props: Props) => {
 
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-2xl"> Don't stalk me</p>
+            <p className="text-2xl"> Dont stalk me</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
