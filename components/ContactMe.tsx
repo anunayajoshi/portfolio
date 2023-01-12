@@ -30,7 +30,7 @@ const ContactMe = (props: Props) => {
       </h3>
 
       <div className="flex flex-col space-y-8 mt-24">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-3xl md:text-4xl font-semibold text-center">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           Don't contact me after work hours. <br />
           <span className="text-2xl">
@@ -58,23 +58,23 @@ const ContactMe = (props: Props) => {
         </div>
 
         <form
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="flex space-x-2">
-            <input
-              {...register("name")}
-              className="contactInput"
-              type="text"
-              placeholder="Name"
-            ></input>
-            <input
-              {...register("email")}
-              className="contactInput"
-              type="email"
-              placeholder="Email"
-            ></input>
-          </div>
+          {/* <div className="md:flex md:space-x-2 space-y-2 "> */}
+          <input
+            {...register("name")}
+            className="contactInput"
+            type="text"
+            placeholder="Name"
+          ></input>
+          <input
+            {...register("email")}
+            className="contactInput"
+            type="email"
+            placeholder="Email"
+          ></input>
+          {/* </div> */}
 
           <input
             {...register("subject")}

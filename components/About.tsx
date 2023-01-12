@@ -28,9 +28,7 @@ const About = (props: Props) => {
         <p className="text-base">
           You can call me Anun. I am 22 years old. I like making my life easier,
           and coding has helped me achieve that in different ways which you can
-          {/* make the background of the text "real" #F7AB0A     */}
-          see through my projects. I like to solve{" "}
-          <span className="bg-[#F7AB0A]/50">real</span> problems, and am eager
+          see through my projects. I like to solve real problems, and am eager
           to wear multiple hats to solve a problem instead of purely from a
           technical perspective.
         </p>

@@ -11,11 +11,11 @@ const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
       "Hi, I'm Anunaya Joshi",
-      "I like automating things",
-      "I want to create solutions",
+      "I like solving problems",
+      "I enjoy automating things",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 1000,
   });
 
   return (

@@ -66,24 +66,31 @@ const Projects = (props: Props) => {
         },
       ],
     },
+    {
+      name: "The Divine Cross - Dropshipping Business",
+      image: "/dropshipping.gif",
+      description:
+        "Utilised Shopify's free trial to run a dropshipping business for the first time, picking up skills along the way such as designing a logo, visual ad, running Facebook ads and using Influencer Marketing to drive sales. I also learnt how to use Shopify and Oberlo to manage the business. Managed to obtain 7 customers, from 2 weeks of running ads.",
+      techStack: [],
+    },
   ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 "
+      className="flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 "
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects{" "}
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-grey-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80">
+      <div className="mt-10 relative w-full flex overflow-x-scroll overflow-y-visible snap-x snap-mandatory z-20 scrollbar-track-grey-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80">
         {/* Projects */}
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col md:flex-row space-y-5 items-center justify-center p-20 md:p-44 h-screen "
+            className="w-screen flex-shrink-0 snap-center flex flex-col md:flex-row space-y-5 items-center justify-center p-20 md:p-44"
           >
             <motion.img
               initial={{ opacity: 0, y: -300 }}
