@@ -31,7 +31,7 @@ const About = (props: Props) => {
               The Straits Times!
             </span>{" "}
             <h3 className="text-lg font-light italic">
-              (Singapore's newspaper)
+              {"(Singapore's newspaper)"}
             </h3>
           </a>
         </h4>
