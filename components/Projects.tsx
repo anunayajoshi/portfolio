@@ -6,6 +6,20 @@ type Props = {};
 const Projects = (props: Props) => {
   const projects = [
     {
+      name: "Casting Couch - Casting Calls Marketplace",
+      image: "CastingCouchPrototypee.gif",
+      description:
+        "I studied Theatre Studies during my junior college and wanted to become an actor. I applied for auditions and casting calls but found the process to be very cumbersome in Singapore, where Facebook groups are primarily used." +
+        "\n\nI thus decided to build a marketplace for casting calls, where users can create and apply casting calls easily. The casting calls can be filtered by location, date, and other criteria. The platform also allows users to create a profile and upload their portfolio so that one doesn't have to send emails of their information repeatedly.",
+      techStack: [
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+          name: "Figma",
+        },
+      ],
+    },
+    {
       name: "KR Modules - Telegram Application with PostgreSQL Database",
       image: "/krmodsvid.gif",
       description:
@@ -119,7 +133,7 @@ const Projects = (props: Props) => {
                 ))}
               </div>
 
-              <p className="text-lg text-center md:text-left">
+              <p className="text-lg text-center md:text-left whitespace-pre-wrap">
                 {project.description}
               </p>
             </div>

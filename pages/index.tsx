@@ -11,6 +11,7 @@ import ContactMe from "../components/ContactMe";
 
 import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import Testimonial from "../components/Testimonial";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,29 +31,33 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <section id="hero" className="snap-start">
+      <section id="hero" className="md:snap-start">
         <Hero />
       </section>
 
       {/* About */}
-      <section id="about" className="snap-center">
+      <section id="about" className="md:snap-center">
         <About />
       </section>
 
       {/* Experience */}
-      <section id="experience" className="snap-center">
+      <section id="experience" className="md:snap-end">
         <WorkExperience />
       </section>
 
-      <section id="skills" className="snap-start">
+      <section id="skills" className="md:snap-start">
         <Skills />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="md:snap-start">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-start">
+      <section id="testimonial" className="md:snap-start">
+        <Testimonial />
+      </section>
+
+      <section id="contact" className="md:snap-start">
         <ContactMe />
       </section>
 

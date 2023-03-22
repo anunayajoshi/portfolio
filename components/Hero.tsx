@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -19,14 +20,15 @@ const Hero = (props: Props) => {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden">
       <BackgroundCircle />
-      <Image
+      <motion.img
+        initial={{ scale: 5 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.8 }}
         src="/anunguitar.jpg"
-        width={500}
-        height={500}
         alt="profile pic"
-        className="relative rounded-full mx-auto h-32 w-32 object-cover"
+        className="relative rounded-full mx-auto h-56 w-56 object-cover my-auto"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">

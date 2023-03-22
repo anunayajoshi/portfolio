@@ -15,22 +15,45 @@ const About = (props: Props) => {
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
-        src="/anunguitar.jpg"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-96 md:h-96 xl:w-[500px] xl:h-[600px]"
+        src="newspaper2.jpeg"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-96 md:h-96 xl:w-[700px] xl:h-[600px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold ">
-          Here is a{" "}
-          <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
-          background
+          I was featured on <br />
+          <a
+            href="https://www.scholarschoice.com.sg/experience/learning-a-new-language-to-help-others-bring-their-dreams-to-life/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="underline decoration-[#F7AB0A]/50">
+              The Straits Times!
+            </span>{" "}
+            <h3 className="text-lg font-light italic">
+              (Singapore's newspaper)
+            </h3>
+          </a>
         </h4>
+
         <p className="text-base">
-          You can call me Anun. I am 22 years old. I like making my life easier,
-          and coding has helped me achieve that in different ways which you can
-          see through my projects. I like to solve real problems, and am eager
-          to wear multiple hats to solve a problem instead of purely from a
-          technical perspective.
+          You can call me Anun. I enjoy making my life easier, and coding has
+          helped me achieve that in different ways which you can see through my
+          projects. I like to solve real problems, and am eager to wear multiple
+          hats to solve a problem instead of purely from a technical
+          perspective.
+          <br />
+          <br />
+          If you want to hear it from someone else,{" "}
+          <a
+            className="underline text-[#F7AB0A] hover:no-underline"
+            href="https://www.scholarschoice.com.sg/experience/learning-a-new-language-to-help-others-bring-their-dreams-to-life/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>{" "}
+          is the article written about me in The Straits Times!
         </p>
       </div>
     </div>
