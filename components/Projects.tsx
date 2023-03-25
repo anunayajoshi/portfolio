@@ -95,16 +95,16 @@ const Projects = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="flex relative overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 "
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24  2xl:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects{" "}
       </h3>
 
-      <div className="mt-10 relative w-full flex overflow-x-scroll overflow-y-visible snap-x snap-mandatory z-20 scrollbar-track-grey-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80">
+      <div className="mt-8 relative w-full flex overflow-x-scroll overflow-y-visible snap-x snap-mandatory z-20 scrollbar-track-grey-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]/80">
         {/* Projects */}
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col md:flex-row space-y-5 items-center justify-center p-20 md:p-44"
+            className="w-screen flex-shrink-0 snap-center flex flex-col md:flex-row space-y-5 items-center justify-center p-10 md:p-36 2xl:p-44"
           >
             <motion.img
               initial={{ opacity: 0, y: -300 }}
@@ -112,7 +112,7 @@ const Projects = (props: Props) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={project.image}
-              className=" rounded-2xl object-contain pt-4 w-full h-[400px] md:h-[400px] xl:h-[500px] scale-50 hover:scale-125"
+              className=" rounded-2xl object-contain pt-4 w-full h-[400px] md:h-[400px] 2xl:h-[500px] scale-50 hover:scale-125"
             />
 
             <div className="flex flex-col space-y-10 px-0 md:px-10 max-w-6xl">

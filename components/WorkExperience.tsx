@@ -16,7 +16,7 @@ const WorkExperience = (props: Props) => {
         Experience
       </h3>
 
-      <div className="mt-24 w-full flex space-x-5 overflow-x-scroll p-3 snap-x snap-mandatory scrollbar-thin scrollbar-track-grey-400 scrollbar-thumb-[#F7AB0A]/80 ">
+      <div className="mt-18 w-full flex space-x-5 overflow-x-scroll p-3 snap-x snap-mandatory scrollbar-thin scrollbar-track-grey-400 scrollbar-thumb-[#F7AB0A]/80 ">
         <Card
           title="Software Engineer Intern"
           companyName="Wildcats.io"
@@ -37,7 +37,7 @@ const WorkExperience = (props: Props) => {
           points={[
             "Managed challenges being run for over 300 youth in Thailand, Vietnam and Cambodia to pitch business ideas and develop them into running businesses.",
             "Was responsible for building a new improved Master-class to learn how to develop a business idea into a pitch deck, by creating bite-sized videos about market research, user persona and user journeys, financial projections, prototyping and devising a pitch deck.",
-            "Organised activities to bring together and sustain a community of aspiring entrepreneurs. Presented workshops to over 200 university students.",
+            "Brought together a community of aspiring entrepreneurs and presented workshops to over 200 university students.",
           ]}
         />
         <Card

@@ -27,7 +27,7 @@ const Card = ({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className="w-32 h-32 rounded-full lg:w-[200px] lg:h-[200px] object-cover object-center"
         src={image}
         alt="logo"
       />
@@ -39,7 +39,7 @@ const Card = ({
 
         <p className="flex uppercase py-5 text-gray-500">{duration}</p>
 
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul className="list-disc space-y-3 ml-5 text-lg">
           {points.map((point) => (
             <li key={point}>{point}</li>
           ))}
