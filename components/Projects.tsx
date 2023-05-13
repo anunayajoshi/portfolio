@@ -10,12 +10,40 @@ const Projects = (props: Props) => {
       image: "CastingCouchPrototypee.gif",
       description:
         "I studied Theatre Studies during my junior college and wanted to become an actor. I applied for auditions and casting calls but found the process to be very cumbersome in Singapore, where Facebook groups are primarily used." +
-        "\n\nI thus decided to build a marketplace for casting calls, where users can create and apply casting calls easily. The casting calls can be filtered by location, date, and other criteria. The platform also allows users to create a profile and upload their portfolio so that one doesn't have to send emails of their information repeatedly.",
+        "\n\nI thus decided to build a marketplace for casting calls, where users can create and apply casting calls easily. My group and I conducted UX research and prototypes, and I am now currently building the MVP using Next.js and PostgreSQL. ",
       techStack: [
         {
           image:
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
           name: "Figma",
+        },
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg",
+          name: "Next.js",
+        },
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+          name: "PostgreSQL",
+        },
+      ],
+    },
+    {
+      name: "PDF Website with Hidden ChatGPT Chatbot",
+      image: "/appdata.jpg",
+      description:
+        "Didn't feel like studying for my open-book, but no ChatGPT exam, so built a PDF-looking website, where I can type in a hidden input box, which connects to OpenAI and outputs the result in the next page, as part of the tutorial pdf text. Only for self-use and not for cheating purposes.",
+      techStack: [
+        {
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg",
+          name: "Next.js",
+        },
+        {
+          name: "TailwindCSS",
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         },
       ],
     },

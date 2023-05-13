@@ -12,11 +12,25 @@ const WorkExperience = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="h-screen flex relative overflow-hidden flex-col md:flex-row max-w-full px-10 justify-evenly mx-auto items-center text-left"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
+      <h3 className="absolute top-24 xl:top-12 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Experience
       </h3>
 
       <div className="mt-18 w-full flex space-x-5 overflow-x-scroll p-3 snap-x snap-mandatory scrollbar-thin scrollbar-track-grey-400 scrollbar-thumb-[#F7AB0A]/80 ">
+        <Card
+          title="Teaching Assistant - CS2102 Database Systems"
+          companyName="National University of Singapore"
+          image="/nus.jpg"
+          techStack="SQL | PostgreSQL |"
+          duration="Jan 2023 - May 2023"
+          points={[
+            "Taught 2 classes of 80 students total and provided weekly consultations.",
+            "Led tutorial lessons about Relational Algebra, SQL and PostgreSQL, ER Diagrams, Functions and Triggers, Functional Dependencies and Normalisation of Databases",
+            "Assisted with grading over 200 students ER diagram projects, schema creation, and translation of the diagram into SQL",
+            "Achieved over 90% student satisfaction ratings and positive feedback on teaching style and effectiveness.",
+          ]}
+        />
+
         <Card
           title="Software Engineer Intern"
           companyName="Wildcats.io"
